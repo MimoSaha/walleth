@@ -19,3 +19,8 @@
 -dontobfuscate
 
 -keep public class org.kethereum.crypto.impl.**
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
